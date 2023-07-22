@@ -1,6 +1,6 @@
 # vue-chat-example
 
-This template should help get you started developing with Vue 3 in Vite.
+Check this project demo at https://majestic-cassata-ee4d9c.netlify.app/
 
 
 ## Screenshot
