@@ -23,7 +23,7 @@ interface Message {
 
 const app = express();
 const httpServer = createServer(app);
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8080;
 const io = new Server<
   ClientToServerEvents,
   ServerToClientEvents,

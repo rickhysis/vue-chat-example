@@ -6,12 +6,12 @@ import { useStore } from '../../store/store';
 import { io } from "socket.io-client";
 import { v4 as uuidv4 } from 'uuid';
 
-const { VITE_WS } = import.meta.env
+//const { VITE_WS } = import.meta.env
 const message = ref<string>('');
 const typing = ref<boolean>(false)
 
 const store = useStore()
-const socket = io(VITE_WS);
+const socket = io('https://hidden-moon-10.fly.dev');
 const chatList = computed(() => store.getChatList)
 
 socket.on("connect", () => {
