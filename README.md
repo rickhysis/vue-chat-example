@@ -34,3 +34,8 @@ npm run build
 ```sh
 npm run lint
 ```
+### Run Server 
+
+```sh
+npm run start 
+```
