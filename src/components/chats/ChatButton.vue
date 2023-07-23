@@ -45,4 +45,15 @@ const store = useStore()
     min-width: 40%;
     bottom: 450px;
 }
+
+@media only screen and (max-width: 600px) {
+    .open-button {
+        width: 90%;
+    }
+    .close-button{
+        top: 20px;
+        bottom: auto;
+        min-width: 90%;
+    }
+}
 </style>

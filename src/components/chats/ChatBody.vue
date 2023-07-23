@@ -68,7 +68,8 @@ function handleMessage(e: any) {
                     <Transition name="slide-fade">
                         <p v-if="item.userId === store.$state.id" class="text"> {{ item.message }}</p>
                     </Transition>
-                    <div :class="{ photo: true, 'photo-sender': item.userId === store.$state.id, 'photo-receiver': item.userId !== store.$state.id }">
+                    <div
+                        :class="{ photo: true, 'photo-sender': item.userId === store.$state.id, 'photo-receiver': item.userId !== store.$state.id }">
                         <div class="online"></div>
                     </div>
                     <Transition name="slide-fade">
@@ -132,9 +133,11 @@ function handleMessage(e: any) {
     background-repeat: no-repeat;
     border-radius: 50%;
 }
-.photo-sender{
+
+.photo-sender {
     background-image: url(https://i.pinimg.com/originals/a9/26/52/a926525d966c9479c18d3b4f8e64b434.jpg);
 }
+
 .photo-receiver {
     background-image: url(https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
 }
@@ -251,4 +254,10 @@ function handleMessage(e: any) {
 .clickable {
     cursor: pointer;
 }
-</style>
+
+@media only screen and (max-width: 600px) {
+    .chat {
+        min-width: 90%;
+        min-height: 90%;
+    }
+}</style>
